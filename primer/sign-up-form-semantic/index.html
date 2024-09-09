@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>Coding school</h1>
+        <h1>My Coding school</h1>
     </header>
     <main>
         <article>
@@ -17,29 +17,52 @@
             </p>
         </article>
         <section>
+            <h2>Our bootcamps</h2>
+            <ul>
+                <li>
+                    <article>
+                        <h3>bootcamp 1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem adipisci soluta eaque voluptas excepturi aut, qui a debitis libero accusamus officiis veniam ipsum, repellat voluptatum nam odit temporibus magni.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>bootcamp 2</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem adipisci soluta eaque voluptas excepturi aut, qui a debitis libero accusamus officiis veniam ipsum, repellat voluptatum nam odit temporibus magni.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>bootcamp 3</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem adipisci soluta eaque voluptas excepturi aut, qui a debitis libero accusamus officiis veniam ipsum, repellat voluptatum nam odit temporibus magni.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section>
             <form action="test.php" method="dialog">
                 <fieldset>
                     <legend><h2>Subscribe Here</h2></legend>
 
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="enter your name here" required /><br/>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="enter your name here" required /><br/>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="enter your email here" required /><br/>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="enter your email here" required /><br/>
 
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="enter your password here" required /><br/>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="enter your password here" required /><br/>
 
-                    <label for="bootcamp">Bootcamp</label>
-                    <select name="bootcamp" required>
+                    <label for="bootcamp">Bootcamp:</label>
+                    <select id="bootcamp" name="bootcamp" required>
                         <option value="">select the desired bootcamp</option>
                         <option value="bootcamp 1">bootcamp 1</option>
                         <option value="bootcamp 2">bootcamp 2</option>
                         <option value="bootcamp 3">bootcamp 3</option>
                     </select><br/>
 
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="enter further information here" required></textarea><br>
+                    <label for="message">Information:</label>
+                    <textarea id="message" name="message" placeholder="enter further information here" required></textarea><br>
 
                     <input type="submit" value="Submit registration form">
                 </fieldset>
