@@ -10,12 +10,7 @@ a {
 a:hover {
     color: darkred;
 }
-
-.header {
-    padding: 1em;
-}
-
-.main {
+.page  {
     width: 100%;
     max-width: 1200px;
     padding: 1em;
