@@ -14,10 +14,6 @@ header {
     border-bottom: 2px solid #29213f;
 }
 
-header figure {
-    /*text-align: center;*/
-}
-
 header figure figcaption {
     text-align: center;
 }
