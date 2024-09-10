@@ -15,24 +15,7 @@ header {
 }
 
 header figure {
-    /*text-align: center;*/
-}
-
-header figure figcaption {
     text-align: center;
-}
-
-header img {
-    display: block;
-    margin: 1rem auto;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    filter: grayscale(1);
-    transition: filter .5s linear;
-}
-
-header img:hover {
-    filter: none;
 }
 
 header ul {
@@ -60,14 +43,23 @@ main {
     margin: 2rem 4rem;
 }
 
+main article,
 main section {
     margin-bottom: 3rem;
 }
 
+main section p {
+    max-width: 80ch;
+}
+
+main article ul,
 main section ul {
     list-style: none;
 }
 
+main article li h3,
+main article li p,
+main article li details,
 main section li h3,
 main section li p,
 main section li details {
@@ -79,42 +71,60 @@ main section li {
     margin: .5rem;
 }
 
-details {
-    padding: 10px;
-    background-color: #e4eaef;
-    border-radius: 5px;
+footer {
+    padding: 2rem 4rem;
+    font-size: .8rem;
 }
 
-details p {
-    color: white;
-    background: #30353b;
-    padding: 1em;
-    border-radius: 5px;
-    margin-top: .5rem;
-}
-summary {
-    cursor: pointer;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+/* dog-images */
+.dogs {
+    overflow: hidden;
 }
 
-/*
-details p {
-    padding: 1rem;
+.dogs figure {
     background-color: white;
+    display: block;
+    width: 33.333333%;
+    padding: .5rem;
+    float: left;
 }
 
-summary {
-    cursor: pointer;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+.dogs figure:hover img {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
 }
-summary::marker {
-    color: lightblue;
-    font-size: 1.2em;
-  }
-    */
+
+.dogs figure figcaption {
+    text-align: center;
+}
+
+.dogs figure img {
+    width: 100%;
+}
+
+.contact form {
+    width: 50%;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    line-height: 2rem;
+    padding: 0 1rem;
+    border: 0 none;
+    margin-bottom: 1em;
+}
+
+.contact form input:invalid {
+    color: red;
+}
+
+.contact form button.submit {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact form button.submit:hover{
+    background-color: green;
+}
