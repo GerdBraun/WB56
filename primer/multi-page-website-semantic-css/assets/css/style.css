@@ -1,0 +1,295 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* general styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: orangered;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+    color: #174a5a;
+}
+
+h2 {
+    margin-bottom: .5rem;
+    color: orangered;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    height: 8px;
+    background: -webkit-radial-gradient(rgba(0, 0, 0, .1), rgba(255, 255, 255, 0) 60%);
+    background: -moz-radial-gradient(rgba(0, 0, 0, .1), rgba(255, 255, 255, 0) 60%);
+    background: -o-radial-gradient(rgba(0, 0, 0, .1), rgba(255, 255, 255, 0) 60%);
+    background: radial-gradient(rgba(0, 0, 0, .1), rgba(255, 255, 255, 0) 60%);
+    background-size: 100% 16px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+figure {
+    background-color: #174a5a;
+}
+
+figure figcaption {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+figure .img-wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure.left-float {
+    width: 33%;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+figure.right-float {
+    width: 33%;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+section aside {
+    width: 33%;
+    float: right;
+    background-color: #d7eaf0;
+    border: 1px solid #174a5a;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: 0 0 1rem 1rem;
+    font-size: .8rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+section aside p {
+    margin: 0;
+}
+
+section,
+article {
+    overflow: hidden;
+}
+
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+header .inside,
+main .inside,
+footer .inside {
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: #174a5a;
+}
+
+footer .inside {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: .8rem;
+    color: white;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+header a {
+    color: white;
+}
+
+header li a {
+    padding: .5rem;
+}
+
+header li.active a {
+    color: orangered;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    margin: 0;
+}
+
+header .logo a {
+    display: block;
+    height: 100%;
+}
+
+header .logo img {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+}
+
+
+
+/* contact */
+
+.contact-wrapper {
+    border: 1px solid #174a5a;
+}
+
+.contact-wrapper ul {
+    list-style: none;
+}
+
+.contact-wrapper li {
+    margin-bottom: .5rem;
+}
+
+.contact-wrapper .contact-classical {
+    font-style: normal;
+}
+
+.contact-wrapper .half-width {
+    width: 50%;
+    float: left;
+    padding: 1rem;
+
+}
+
+.contact-wrapper .desc,
+.contact-wrapper label {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5rem;
+}
+
+.contact-wrapper a,
+.contact-wrapper input,
+.contact-wrapper button,
+.contact-wrapper textarea {
+    width: 60%;
+    display: inline-block;
+    line-height: 1.5rem;
+    border: 0 none;
+}
+
+.contact-wrapper input,
+.contact-wrapper button,
+.contact-wrapper textarea {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.contact-wrapper button.submit {
+    margin-left: 21%;
+    font-weight: bold;
+    background-color: #174a5a;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.contact-wrapper button.submit:hover {
+    background-color: orangered;
+}
+
+/* specials */
+
+.coffee-div {
+    height: 25vh;
+    background-color: #ccc;
+    background-image: url("../../images/coffeepic1.jpg");
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) xs */
+@media only screen and (max-width: 600px) {
+
+    /* CSS rules for extra small screens */
+    header .logo {
+        position: relative;
+        margin-left: .5rem;
+        line-height: 50px;
+    }
+
+    header .logo a {
+        display: inline;
+    }
+
+    header .logo a img {
+        display: inline;
+        height: 50px;
+    }
+
+    header nav {
+        float: none;
+        clear: both;
+        position: relative;
+    }
+
+    header nav ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        padding: 0 0.5rem;
+    }
+}
