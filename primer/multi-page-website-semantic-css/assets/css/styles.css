@@ -68,6 +68,9 @@ header h1 {
     line-height: 3rem;
     color: orangered;
 }
+header h1 a{
+    color: orangered;
+}
 header .logo{
     height: 3rem;
     width: auto;
