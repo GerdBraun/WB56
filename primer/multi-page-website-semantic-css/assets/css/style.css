@@ -33,6 +33,7 @@ img {
 
 figure {
     background-color: #174a5a;
+    margin-bottom: 10px;
 }
 
 figure .img-wrapper {
@@ -49,7 +50,7 @@ figcaption {
     padding: 5px;
 }
 
-div.centered {
+.centered {
     text-align: center;
 }
 
@@ -112,10 +113,12 @@ h2.underlined::after {
 p {
     margin-bottom: 1rem;
 }
+
 p.col2 {
     columns: 2;
     column-gap: var(--main-gap);
 }
+
 p.col3 {
     columns: 3;
     column-gap: var(--main-gap);
@@ -368,6 +371,11 @@ footer {
 
     h2 {
         font-size: 1.5em
+    }
+
+    p.col2,
+    p.col3 {
+        columns: 1;
     }
 
     section.grid.col2 .grid-wrapper,
