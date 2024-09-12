@@ -31,10 +31,10 @@ body {
 .heading {
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #6776a9;
-    font-weight: bold;
     color: white;
     padding: 0.5rem 1rem;
     background: linear-gradient(to right, #0e256a, #aacfed);
+    font-size: 1.125em;
 }
 
 .content {
