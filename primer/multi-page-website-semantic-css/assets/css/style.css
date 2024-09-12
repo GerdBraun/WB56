@@ -435,7 +435,7 @@ footer {
 
     header nav,
     header nav a {
-        display: block;
+        flex-direction: column;
     }
 
     h2 {
