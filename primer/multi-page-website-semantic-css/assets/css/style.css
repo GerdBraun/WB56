@@ -333,6 +333,47 @@ header .mobile-nav summary {
 }
 
 header .mobile-nav summary::marker {
+    content: "";
+}
+header .mobile-nav summary span {
+   cursor: pointer;
+}
+header .mobile-nav summary span.open {
+    display: block;
+}
+header .mobile-nav summary span.close {
+    color: var(--highlight-color);
+    display: none;
+}
+
+header .mobile-nav[open] summary span.open {
+    display: none;
+}
+header .mobile-nav[open] summary span.close {
+    display: block;
+}
+
+main a::before {
+    font-size: .8rem;
+    line-height: 1rem;
+    font-family: 'Material Icons';
+    content: "\e157";
+    margin-right: .25rem;
+}
+main a[target="_blank"]::before {
+    font-family: 'Material Icons';
+    content: "\e89e";
+}
+main a[href^="tel:"]::before {
+    font-family: 'Material Icons';
+    content: "\e0b0";
+}
+main a[href^="mailto:"]::before {
+    font-family: 'Material Icons';
+    content: "\e158";
+}
+
+/* header .mobile-nav summary::marker {
     content: "\2261";
     display: block;
     font-size: 3rem;
@@ -342,7 +383,7 @@ header .mobile-nav summary::marker {
 header .mobile-nav[open] summary::marker {
     color: var(--highlight-color);
     content: "\2716";
-}
+} */
 
 footer {
     font-size: .8rem;
