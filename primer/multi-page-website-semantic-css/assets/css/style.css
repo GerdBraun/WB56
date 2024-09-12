@@ -118,9 +118,11 @@ h2.underlined::after {
     border-bottom: 1px dotted white;
     flex-grow: 1;
 }
+
 #contact a {
     color: white;
 }
+
 #contact a:hover {
     color: var(--highlight-color);
 }
@@ -254,6 +256,11 @@ section.grid .column a.more-link {
     align-self: flex-end;
 }
 
+section.grid .column a.more-link::before {
+    content: "";
+    margin: 0;
+}
+
 section.grid .column a.more-link::after {
     content: " >";
 }
@@ -335,12 +342,15 @@ header .mobile-nav summary {
 header .mobile-nav summary::marker {
     content: "";
 }
+
 header .mobile-nav summary span {
-   cursor: pointer;
+    cursor: pointer;
 }
+
 header .mobile-nav summary span.open {
     display: block;
 }
+
 header .mobile-nav summary span.close {
     color: var(--highlight-color);
     display: none;
@@ -349,6 +359,7 @@ header .mobile-nav summary span.close {
 header .mobile-nav[open] summary span.open {
     display: none;
 }
+
 header .mobile-nav[open] summary span.close {
     display: block;
 }
@@ -360,14 +371,17 @@ main a::before {
     content: "\e157";
     margin-right: .25rem;
 }
+
 main a[target="_blank"]::before {
     font-family: 'Material Icons';
     content: "\e89e";
 }
+
 main a[href^="tel:"]::before {
     font-family: 'Material Icons';
     content: "\e0b0";
 }
+
 main a[href^="mailto:"]::before {
     font-family: 'Material Icons';
     content: "\e158";
@@ -398,6 +412,11 @@ footer {
     cursor: pointer;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, .75);
+}
+
+.btn::before {
+    content: "";
+    margin: 0;
 }
 
 .btn:hover {
@@ -436,6 +455,10 @@ footer {
     header nav,
     header nav a {
         flex-direction: column;
+    }
+
+    h1.supersize {
+        font-size: 2em;
     }
 
     h2 {
