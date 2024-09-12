@@ -9,18 +9,23 @@ body {
     background-color: #aacfed;
 }
 
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
 .window {
     width: 100%;
     max-width: 760px;
     max-width: 460px;
-    margin: 0 auto;
     background-color: #c0c0c0;
     border-radius: 5px 5px 5px 5px;
     border: 2px solid white;
     border-right-color: #444346;
     border-bottom-color: #444346;
-
-    margin-top: 5rem;
 }
 
 .heading {
