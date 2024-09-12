@@ -79,7 +79,6 @@ h1.supersize {
         3px -3px 0 #000;
 }
 
-
 h1.inverted {
     color: white;
 }
@@ -109,6 +108,23 @@ h2.underlined::after {
     display: block;
     margin-bottom: 30px;
 }
+
+#contact h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+}
+
+#contact .flex-filler {
+    border-bottom: 1px dotted white;
+    flex-grow: 1;
+}
+#contact a {
+    color: white;
+}
+#contact a:hover {
+    color: var(--highlight-color);
+}
+
 
 p {
     margin-bottom: 1rem;
@@ -229,7 +245,19 @@ section.grid .column {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
 }
+
+section.grid .column a.more-link {
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+section.grid .column a.more-link::after {
+    content: " >";
+}
+
 
 section.grid .column h3 {
     color: var(--main-bg-color);
@@ -336,6 +364,7 @@ footer {
     color: var(--highlight-color);
 }
 
+
 /* responsive break points */
 @media only screen and (max-width: 1280px) {}
 
@@ -385,6 +414,10 @@ footer {
 }
 
 @media only screen and (max-width: 399px) {
+    header {
+        position: relative;
+    }
+
     header nav ul {
         display: none;
     }
