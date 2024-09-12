@@ -66,7 +66,21 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    color: var(--highlight-color);
+}
+
+h1.supersize {
+    font-size: 4em;
+    text-shadow:
+        3px 3px 0 #000,
+        -3px 3px 0 #000,
+        -3px -3px 0 #000,
+        3px -3px 0 #000;
+}
+
+
+h1.inverted {
+    color: white;
 }
 
 h2,
@@ -93,6 +107,18 @@ h2.underlined::after {
     background-size: 100% 16px;
     display: block;
     margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+p.col2 {
+    columns: 2;
+    column-gap: var(--main-gap);
+}
+p.col3 {
+    columns: 3;
+    column-gap: var(--main-gap);
 }
 
 a {
@@ -230,7 +256,7 @@ header a {
 }
 
 header a:hover,
-header li.active a{
+header li.active a {
     color: var(--highlight-color);
 }
 
@@ -247,6 +273,14 @@ header nav>a {
     align-items: center;
     white-space: nowrap;
     gap: 10px;
+}
+
+header nav>a span {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: "Unlock", serif;
+    text-transform: capitalize;
+
 }
 
 header nav img {
@@ -305,7 +339,8 @@ footer {
 
 @media only screen and (max-width: 900px) {
 
-    header nav a h1 {
+    header nav a span {
+        display: block;
         text-align: center;
     }
 
