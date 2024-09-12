@@ -1,3 +1,9 @@
+/* definitions */
+:root{
+    --main-bg-color: #174a5a;
+    --highlight-color: orangered;
+}
+
 /* reset */
 * {
     padding: 0;
@@ -17,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: orangered;
+    color: var(--highlight-color);
 }
 
 h1,
@@ -26,12 +32,12 @@ h3,
 h4 {
     margin-bottom: .25rem;
     text-transform: uppercase;
-    color: #174a5a;
+    color: var(--main-bg-color);
 }
 
 h2 {
     margin-bottom: .5rem;
-    color: orangered;
+    color: var(--highlight-color);
     text-align: center;
 }
 
@@ -49,7 +55,7 @@ h2::after {
 
 
 figure {
-    background-color: #174a5a;
+    background-color: var(--main-bg-color);
 }
 
 figure figcaption {
@@ -85,7 +91,7 @@ section aside {
     width: 33%;
     float: right;
     background-color: #d7eaf0;
-    border: 1px solid #174a5a;
+    border: 1px solid var(--main-bg-color);
     border-radius: 5px;
     padding: .5rem;
     margin: 0 0 1rem 1rem;
@@ -120,7 +126,7 @@ footer .inside {
 
 header,
 footer {
-    background-color: #174a5a;
+    background-color: var(--main-bg-color);
 }
 
 footer .inside {
@@ -146,7 +152,7 @@ header li a {
 }
 
 header li.active a {
-    color: orangered;
+    color: var(--highlight-color);
 }
 
 header nav {
@@ -184,7 +190,7 @@ header .logo img {
 /* contact */
 
 .contact-wrapper {
-    border: 1px solid #174a5a;
+    border: 1px solid var(--main-bg-color);
 }
 
 .contact-wrapper ul {
@@ -234,14 +240,14 @@ header .logo img {
 .contact-wrapper button.submit {
     margin-left: 21%;
     font-weight: bold;
-    background-color: #174a5a;
+    background-color: var(--main-bg-color);
     color: white;
     border: 0 none;
     cursor: pointer;
 }
 
 .contact-wrapper button.submit:hover {
-    background-color: orangered;
+    background-color: var(--highlight-color);
 }
 
 /* specials */
