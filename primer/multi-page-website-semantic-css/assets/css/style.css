@@ -387,18 +387,6 @@ main a[href^="mailto:"]::before {
     content: "\e158";
 }
 
-/* header .mobile-nav summary::marker {
-    content: "\2261";
-    display: block;
-    font-size: 3rem;
-    transform: rotate(45deg);
-}
-
-header .mobile-nav[open] summary::marker {
-    color: var(--highlight-color);
-    content: "\2716";
-} */
-
 footer {
     font-size: .8rem;
 }
