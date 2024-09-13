@@ -144,7 +144,7 @@ p.col3 {
 
 a {
     text-decoration: none;
-    color: #666;
+    color: var(--main-bg-color);
 }
 
 a:hover {
@@ -183,6 +183,25 @@ textarea {
     margin: 10px 0;
     border: 1px solid white;
     background-color: rgba(255, 255, 255, .75);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.25em;
+    padding: 0 50px;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote::before {
+    font-family: 'Material Icons';
+    font-size: 30px;
+    content: "\e244";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* section heights */
@@ -451,6 +470,10 @@ footer {
 
     h2 {
         font-size: 1.5em
+    }
+
+    * {
+        font-size: 18px;
     }
 
     p.col2,
