@@ -1,4 +1,4 @@
-# This is the project page of WB_56
+# Project WB_56
 
 ## Useful links
 - [emmet cheat sheet](https://docs.emmet.io/cheat-sheet/)
