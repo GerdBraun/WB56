@@ -1,4 +1,4 @@
-# Project WB_56
+# Project WD-56
 
 ## Useful links
 - [emmet cheat sheet](https://docs.emmet.io/cheat-sheet/)
