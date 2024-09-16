@@ -1,4 +1,4 @@
-# Project WD-56
+# Project WD-56 Exercises
 
 ## Useful links
 - [emmet cheat sheet](https://docs.emmet.io/cheat-sheet/)
