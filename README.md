@@ -6,5 +6,4 @@
 - [video: Sematic HTML Tags](https://www.youtube.com/watch?v=kX3TfdUqpuU)
 - [css diner](https://flukeout.github.io/)
 - [material icons](https://fonts.google.com/icons)
-
-- [video recordings ot teaching sessions](https://drive.google.com/drive/folders/1mquFdUK0HEnT0aBz7xv9sRd_5XysUtqr)
+- [video recordings of teaching sessions](https://drive.google.com/drive/folders/1mquFdUK0HEnT0aBz7xv9sRd_5XysUtqr)
